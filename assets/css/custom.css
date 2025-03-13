@@ -1,0 +1,52 @@
+/* There is no need to include anything in the config file(s) if this is here and named custom.css */
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/Lora-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/Lora-Italic-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 400 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+  /* Make this the font for everything and increase the default font size from default of 12pt*/
+  /* Even though Lora is a serif font, I want the second choice to be generic cursive. I think this is ok */
+html {
+  font-family: 'Lora', cursive !important; 
+  font-size: 15pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', cursive !important; 
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -1px;
+  word-wrap: break-word;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  }
+
+  #test1 {
+    font-family: 'Lora', cursive !important;
+   }
+
+.posts::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/images/m9+b64_2022-08-12T22_07_40_Stack_16bits_203frames_1218s_bin25pc.jpg') center/cover no-repeat;
+    filter: blur(0.5px);
+    opacity: 0.2;
+    z-index: -1;
+}
